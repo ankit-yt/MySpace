@@ -4,7 +4,7 @@ import { Server } from 'socket.io'
 import cors from 'cors'
 
 const app = express()
-app.use(cors({ origin: 'http://localhost:5173' }))
+app.use(cors({ origin: ['http://localhost:5173', "https://my-space-ankit.vercel.app"] }))
 
 const server = createServer(app)
 const io = new Server(server, {
