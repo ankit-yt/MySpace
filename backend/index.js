@@ -7,7 +7,7 @@ import cors from 'cors'
 const app = express()
 
 const allowedOrigins = [
- 'process.env.FRONTEND_URL',       
+ 'https://virtual-cosmos-sigma.vercel.app',       
   "http://localhost:5173",     
 ].filter(Boolean)
 
