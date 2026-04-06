@@ -4,12 +4,12 @@ import { Server } from 'socket.io'
 import cors from 'cors'
 
 const app = express()
-app.use(cors({ origin: ['http://localhost:5173', "https://my-space-beta.vercel.app/"] }))
+app.use(cors({ origin: ['http://localhost:5173', "https://my-space-beta.vercel.app"] }))
 
 const server = createServer(app)
 const io = new Server(server, {
   cors: {
-    origin: ['http://localhost:5174', 'http://192.168.29.104:5173', 'http://localhost:5173', "https://my-space-beta.vercel.app/"],
+    origin: ['http://localhost:5174', 'http://192.168.29.104:5173', 'http://localhost:5173', "https://my-space-beta.vercel.app"],
   },
 })
 
